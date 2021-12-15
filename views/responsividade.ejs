@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/responsivo.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="parallelogram">
+        <ul>
+            <li>Perfil</li>
+            <li>Qual seu Pet</li>
+            <li>Sobre seu Pet</li>
+            <li>Confirmação</li>
+        </ul>
+        <img src="../img/dog-register.png" alt="">
+    </div>
+
+
+    <section class=""> 
+        <form action="" method="post">
+            <h1>Conte-nos um pouco sobre você</h1>
+            <fieldset class="primeira-div">
+                <div class="container"> 
+                   <input type="text" name="nome" required autofocus placeholder="Primeiro Nome">
+
+                   <label for="nome">Nome</label>
+                </div>
+                <div class="container">
+                    <input type="text" name="sobrenome" required autofocus placeholder="Segundo Nome">
+
+                    <label>Sobrenome</label>
+                </div>
+            </fieldset>
+            <fieldset class="segunda-div">
+                <div class="container">
+                    <input type="text" name="cel" required autofocus placeholder="(xx) xxxxx-xxxx">
+
+                    <label for="cel">Telefone</label>
+                </div>
+                <div class="container">
+                    <input type="email" name="email" required autofocus placeholder="name@email.com">
+
+                    <label for="email">Email</label>
+                </div>
+            </fieldset>
+            <fieldset class="div-endereco">
+                <div class="container end">
+                    <input type="text" name="end" required autofocus placeholder="Endereço Completo">
+
+                    <label for="end">Endereço</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <input type="number" name="numero" placeholder="Numero da Residencia">
+
+                    <label for="numero">Número</label>
+                </div>
+                <div class="container">
+                    <input type="text" name="cidade" placeholder="Cidade">
+
+                    <label>Cidade</label>
+                </div>
+            </fieldset>
+            <fieldset class="div-check">
+                <div id="check">
+                    <input type="checkbox" name="accept" required>
+                    <label>Aceitar os termos de uso</label>
+                </div>
+                <button>Avançar</button>
+            </fieldset>
+            <a href="#" class="link">Ler os termos de uso</a>
+        </form>
+    </section>
+</body>
+</html>

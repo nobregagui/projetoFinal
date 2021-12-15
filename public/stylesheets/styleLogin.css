@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Helvetica;
+    color: #323232;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+body img{
+    width: 100%;
+    height: 210px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a {
+    font-size: .8rem;
+}
+
+a:hover {
+    color: #08558b;
+    
+}
+
+#login-contanier {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: -15vh;
+    position: absolute;
+    left: 34%;
+}
+
+#login-contanier p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #646464;
+}
+
+.estilizar-color {
+    color: #6C63FF;
+}
+
+.modificar-registrar {
+    color: #6C63FF;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input {
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input::placeholder{
+    text-align: center;
+    font-weight: bolder;
+}
+
+input {
+    border-bottom: 2px solid #313131;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-bottom: 2px solid #fead55;
+}
+
+#forget-pass {
+    text-align: right;
+    display: block;
+}
+
+#lembrar {
+    display: flex;
+}
+
+#lem {
+    margin-right: 60px;
+}
+
+.formulario {
+    background: #0077B5;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #fead55;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #6c63ff;
+    transition: .5s;
+}
+
+#social-container, #social-container p {
+    margin-bottom: 40px;
+}
+
+#social-container {
+    padding-top: 30px;
+}
+
+#social-container i {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#lembrar input {
+    width: 30px;
+}
+
+#lembrar label {
+    margin-left: 4px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+
+.fa-facebook-f {
+    background-color: #3B599B;
+}
+
+.fa-linkedin {
+    background-color: #0077B5;
+}
+
+#register-container {
+    margin-bottom: 10px;
+}
+
+#register-container a{
+    color: #000;
+    font-weight: bolder;
+    text-decoration: none;
+}
+ 
+.redes img {
+    margin: 10px;
+}
+
+

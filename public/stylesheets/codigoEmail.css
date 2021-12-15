@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Helvetica;
+    color: #323232;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+body img{
+    width: 100%;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a {
+    font-size: .8rem;
+}
+
+a:hover {
+    color: #08558b;
+    
+}
+
+#login-contanier {
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 2px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    left: 21%;
+    margin-top: -15vh;
+}
+
+#login-container h1 {
+    font-weight: bolder;
+}
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input {
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #313131;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-bottom: 2px solid #fead55;
+}
+
+#forget-pass {
+    text-align: right;
+    display: block;
+}
+
+#lembrar {
+    display: flex;
+}
+
+#lem {
+    margin-right: 60px;
+}
+
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #fead55;
+    color: #fff;
+    cursor: pointer;
+}
+
+input::placeholder{
+    text-align: center;
+    font-weight: bolder;
+}
+
+input[type="submit"]:hover {
+    background-color: #6c63ff;
+    transition: .5s;
+}
+
+#social-container, #social-container p {
+    margin-bottom: 40px;
+}
+
+#social-container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#social-container i {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#social-container div {
+    box-shadow: 1px 1px 1px 1px;
+    width: 100px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+#social-container p {
+    font-weight: bolder;
+}
+
+.fa-facebook-f {
+    background-color: #3B599B;
+}
+
+.fa-linkedin {
+    background-color: #0077B5;
+}
+
+#register-container {
+    margin-bottom: 10px;
+}
+ 
+.redes img {
+    margin: 10px;
+}

@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito';
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url('../img/fundoCadastro.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+div#parallelogram {
+    background: #ffffff;
+    width: 700PX;
+    height: 774px;
+    max-width: 70vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px;
+}
+
+.container-main {
+    max-width: 640px ;
+    height: 50vh;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.container-form {
+    background: #6c63ff;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.container-main h1 {
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+label {
+    font-size: 1.8rem;
+}
+
+form input, form label, form button {
+    display: flex;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+form input {
+    font-size: 18px;
+    height: 40px;
+    padding: 0;
+}
