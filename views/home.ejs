@@ -1,155 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A definir</title>
-    <link rel="stylesheet" href="../stylesheets/estilo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../stylesheets/estilo.css">
+  <title>IANIMALS</title>
 </head>
+
 <body>
-<header>
-    <div class="header">
-        <div class="
-      logo-header">
-        <h1>LOGO</h1>
-      </div>
-      <div class="opcoes-header">
-        <a href="">Home</a>
-        <a href="">Sobre</a>
-        <a href="">Serviços</a>
-        <a href="">Contato</a>
-      </div>
-      <div class="registro-header">
-        <a href="login.ejs" class="login"> <img src="../img/coolicon.png" alt=""> Login</a>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>I</span>ANIMALS</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Depoimentos">Depoimentos</a></li>
+            <li><a href="#projects" data-after="Serviços">Serviços</a></li>
+            <li><a href="#about" data-after="Sobre">Sobre</a></li>
+            <li><a href="#" data-after="Login">Login</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-</header>
-    <section>
-        <div class="geral">
-            <div class="lado-esquerdo">
-                <div><h1>Cuidamos do seu pet como se fosse nosso</h1></div>
-                <div><p>A vida de humanos e animais estão profundamente conectadas de diversas maneiras. Nós sabemos que   quando os animais estão saldaveis, seus donos também estao</p></div>
-                <div class="botao">
-                    <div class="nossos-servicos dentro"><a href=""><h2>Nossos serviços</h2></a></div>
-                    <div class="saiba-mais"><a href=""><h2>Saiba Mais</h2></a></div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Olá, <span></span></h1>
+        <h1>Seja bem vindo á <span></span></h1>
+        <h1>IANIMALS <span></span></h1>
+        <a href="#projects" type="button" class="cta">Nossos Serviços</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Depo<span>i</span>mentos</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas
+          magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias
+          voluptatum explicabo!</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="img/avatar1.png" /></div>
+          <h2>Luiz Felipe</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
+            architecto placeat beatae tenetur officia quod</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="img/avatar2.png" /></div>
+          <h2>Ana Souza</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
+            architecto placeat beatae tenetur officia quod</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="img/avatar3.png" /></div>
+          <h2>Diego Barbosa</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
+            architecto placeat beatae tenetur officia quod</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="img/avatar4.png" /></div>
+          <h2>Leticia Rocha</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
+            architecto placeat beatae tenetur officia quod</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Nossos <span>Serviços</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1><img src="img/pet-shop 1.png" alt=""></h1>
+            <h2>Pets Shops</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/fundoDepoimentos.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1><img src="img/vacina.png" alt=""></h1>
+            <h2>Vacinação</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/banner3.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1><img src="img/veterinary 1.png" alt=""></h1>
+            <h2>Veterinário</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/adorable-white-bulldog-puppy-portrait-social-banner.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1><img src="img/walk-the-pet.png" alt=""></h1>
+            <h2>Passeadores</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/mulherEdog (2).png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1><img src="img/pet.png" alt=""></h1>
+            <h2>Rações e Cosméticos</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/vista-frontalDog.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/fundoDoguinho.png" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">Sobre <span>nós</span></h1>
+        <h2>A IANIMALS oferece serviços e produtos para pets  </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque
+          repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
+          exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni!
+          Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
+          reprehenderit libero enim!</p>
+        <a href="#" class="cta">Junte-se a nós você também</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Informações de <span>Contato</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Telefone</h1>
+            <h2>(11) 4641-5055</h2>
+            <h2>(11) 98142-5377</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>ianimals@gmail.com</h2>
+            <h2>grupopetdh@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Endereço</h1>
+            <h2>R. Apiacás, 85 - Perdizes, São Paulo - SP, 05017-202</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="main-content">
+        <div class="left box">
+            <h2>Nossas redes sociais</h2>
+            <div class="content">
+                <p class="style-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et fermentum nibh, in elementum quam. </p>
+                <div class="social">
+                    <a href="#"><span class="fab fa-facebook"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="#"><span class="fab fa-instagram"></span></a>
+                    <a href="#"><span class="fab fa-youtube"></span></a>
                 </div>
-            </div>
-            <div class="lado-direito">
-                <img src="../img/mulher&dog.png" width="500px" height="500px" alt="">
             </div>
         </div>
-    </section>
-    <section class="banner">
-        <h1>SOBRE NÓS</h1>
-    </section>
-    <section class="wrap">
-            <div class="parte-texto">
-                <h2>NOSSOS SERVIÇOS</h2>
-                <h1>Produtos e serviços  que amamos</h1>
-                <h3>Produtos e serviços personalizados que cabem no seu dia-a-dia</h3>
-            </div>
-        <div class="parte-divisoes">
-            <div class="primeiro">
-                <img src="img/vacina.png" alt="">
-                <h3>Vacinação</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et fermentum nibh, in elementum quam. </p>
-            </div>
-            <div class="segundo">
-                <img src="img/pet-food.png" alt="">
-                <h3>Pet Care</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et fermentum nibh, in elementum quam. </p>
-            </div>
-            <div class="terceiro">
-                <img src="img/pet-shop 1.png" alt="">
-                <h3>Hotel Pet</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et fermentum nibh, in elementum quam. </p>
-            </div>
-            <div class="quarto">
-                <img src="img/pet.png" alt="">
-                <h3>Banho & Tosa</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et fermentum nibh, in elementum quam. </p>
-            </div>
-            <div class="quinto">
-                <img src="img/walk-the-pet.png" alt="">
-                <h3>Pet Walk</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et fermentum nibh, in elementum quam. </p>
-            </div>
-            <div class="sexto">
-                <img src="img/veterinary 1.png" alt="">
-                <h3>Veterinário</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et fermentum nibh, in elementum quam. </p>
+
+        <div class="center box">
+            <h2>Contato</h2>
+            <div class="content">
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Paulista, São Paulo</span>
+                </div>
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text">(11) 4641-5055</span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">ipets@gmail.com</span>
+                </div>
             </div>
         </div>
-    </section>
-    <section id="testmony-container">
-        <div class="wrapper">		
-            <h2>VEJA O QUE NOSSOS CLIENTES DIZEM</h2>
-            <p class="p-center">Aqui temos alguns depoimentos de nossos clientes sobre os serviços que proporcionamos, vem dar uma olhada!.</p>
-            <div class="testmony-box">
-                <p class="testmony-msg">Amei, serviços muito rápidos e prestativos, com um clique eu consegui todas as roupinhas para a minha gata!</p>
-                <img src="img/avatar1.png">
-                <p class="testmony-name">João</p>
-            </div>
-            <div class="testmony-box">
-                <p class="testmony-msg">Meu cachorrinho estava com as vacinas atrasadas, e através do site eu consegui o melhor pet shop mais próximo de casa!.</p>
-                <img src="img/avatar2.png">
-                <p class="testmony-name">Maria</p>
-            </div>
-            <div class="testmony-box">
-                <p class="testmony-msg">Precisei fazer uma viagem e consegui achar um hotel muito bom para o meu cachorro. Incrivél!!!</p>
-                <img src="img/avatar3.png">
-                <p class="testmony-name">Pedro</p>
-            </div>
-            <div class="testmony-box">
-                <p class="testmony-msg">Minha cachorrinha voltou linda da tosagem, muito obrigada!!.</p>
-                <img src="img/avatar4.png">
-                <p class="testmony-name">Alexia</p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="divisoes-footer">
-                <div class="primeiro-footer">
-                    
+        <div class="rigth box">
+            <h2>Nosso Whatsapp</h2>
+            <div class="content">
+                <h2>ENTRE EM CONTATO COM A GENTE ATRAVÉS DO NOSSO WHATSAPP</h2>
+                <div class="btn">
+                   <a href="https://api.whatsapp.com/send?phone=5511981425377&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20os%20servi%C3%A7os%20e%20produtos!" target="_blank">WHATSAPP</a>
                 </div>
-                <div class="segundo-footer">
-                    <h3>Serviços</h3>
-                    <nav>                       
-                        <a href="#">Vacinação</a>
-                        <a href="#">Pet Care</a>
-                        <a href="#">Hotel Pet</a>
-                        <a href="#">Banho e Tosa</a>
-                        <a href="#">Pet Walk</a>
-                        <a href="#">Home Visit</a>
-                    </nav>
-                   
-                </div>
-                <div class="terceiro-footer">
-                    <h3>Sobre</h3>
-                    <nav>
-                        <a href="#">Parceiros</a>
-                        <a href="#">Serviços</a>
-                        <a href="#">Comunidade</a>
-                    </nav>
-                </div>
-                <div class="quarto-footer">
-                    <h3>Novidades</h3>
-                    <label for="Email">Email:</label>
-                    <br>
-                    <input type="email" name="email" id="email" placeholder="Digite seu email">
-                    <br>
-                    <button>Enviar</button>
-                    <nav class="redes-sociais">
-                        <img src="login/icone-do-facebook.png" alt="" width="30px" height="30px">
-                        <img src="login/icone-do-instagram.png" alt="" width="30px" height="30px">
-                        <img src="login/gmail.png" alt="" width="30px" height="30px">
-                    </nav>                    
-                </div>
-        </div>
-    </footer>
+            </div>
+       </div>
+    </div>
+    <div class="bottom">
+        <center>
+            <span class="credit">Created by <a href="#">IANIMALS</a> | </span> 
+            <span class="far fa-copyright"></span><span> 2022 Todos os direitos reservados.</span>
+        </center>
+    </div>
+</footer>
+  <!-- End Footer -->
+  <script src="../javascripts/home.js"></script>
 </body>
+
 </html>

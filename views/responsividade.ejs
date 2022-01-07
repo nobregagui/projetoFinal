@@ -12,10 +12,10 @@
 
     <div id="parallelogram">
         <ul>
-            <li>Perfil</li>
-            <li>Qual seu Pet</li>
-            <li>Sobre seu Pet</li>
-            <li>Confirmação</li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Mostre nos o seu pet</a></li>
+            <li><a href="#">Sobre seu Pet</a></li>
+            <li><a href="#">Confirmação</a></li>
         </ul>
         <img src="../img/dog-register.png" alt="">
     </div>
@@ -26,14 +26,14 @@
             <h1>Conte-nos um pouco sobre você</h1>
             <fieldset class="primeira-div">
                 <div class="container"> 
-                   <input type="text" name="nome" required autofocus placeholder="Primeiro Nome">
+                   <input type="text" name="nome" required autofocus placeholder="Guilherme Nobrega">
 
-                   <label for="nome">Nome</label>
+                   <label for="nome">Nome Completo</label>
                 </div>
                 <div class="container">
-                    <input type="text" name="sobrenome" required autofocus placeholder="Segundo Nome">
+                    <input type="text" name="sobrenome" required autofocus placeholder="User Name">
 
-                    <label>Sobrenome</label>
+                    <label>User Name</label>
                 </div>
             </fieldset>
             <fieldset class="segunda-div">
@@ -48,11 +48,27 @@
                     <label for="email">Email</label>
                 </div>
             </fieldset>
-            <fieldset class="div-endereco">
-                <div class="container end">
-                    <input type="text" name="end" required autofocus placeholder="Endereço Completo">
+            <fieldset>
+                <div class="container">
+                    <input type="password" name="senha" placeholder="Digite sua senha">
 
-                    <label for="end">Endereço</label>
+                    <label for="numero">Senha</label>
+                </div>
+                <div class="container">
+                    <input type="password" name="confirmSenha" placeholder="Confirme sua senha">
+                    <label>Confirmação</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <input type="text" name="endereco" placeholder="Ex: Rua/Estrada...">
+
+                    <label for="numero">Número</label>
+                </div>
+                <div class="container">
+                    <input type="text" name="cidade" placeholder="Ex: Jd Paineira">
+
+                    <label>Cidade</label>
                 </div>
             </fieldset>
             <fieldset>
@@ -72,7 +88,7 @@
                     <input type="checkbox" name="accept" required>
                     <label>Aceitar os termos de uso</label>
                 </div>
-                <button>Avançar</button>
+                <button type="submit">Avançar</button>
             </fieldset>
             <a href="#" class="link">Ler os termos de uso</a>
         </form>

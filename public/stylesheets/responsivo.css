@@ -12,28 +12,28 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url('../img/fundoCadastro.jpg');
+    background: linear-gradient(13deg, #71b7e6, #9b59b6);
 }
 
 div#parallelogram {
     background: #ffffff;
-    width: 700PX;
-    height: 663px;
-    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    padding: 55px 5px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px;
-    color: #414141;
+    max-width: 70vw;;
     list-style: none;
 }
 
 div#parallelogram img {
-    padding-top: 2.3vw;
-    padding-left: 10vw;
+    padding: 3vw;
+    margin-left: auto;
 }
 
 div#parallelogram li {
-    cursor: pointer;
     list-style: none;
+    font-weight: 800;
 }
 
 div#parallelogram li:focus {
@@ -49,14 +49,17 @@ div#parallelogram li {
     padding-top: 40px;
 }
 
-section {
-    display: flex;
-    background: #6C63FFCC;
-    padding: 30px 5px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px;
-    max-width: 70vw;
+div#parallelogram a {
+    text-decoration: none;
+    cursor: pointer;
 }
+
+div#parallelogram a:focus {
+    color: #6C63FF;
+    font-weight: 800;
+}
+
+
 
 section h1 {
     padding: 40px 10px;
@@ -70,8 +73,15 @@ fieldset {
     padding: 10px;
 }
 
-.end {
-    width: 40.7vw;
+.end input {
+    margin-bottom: 15px;
+    width: calc(100% - 60px);
+    height: 60px;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .container input::placeholder {
@@ -80,7 +90,7 @@ fieldset {
 
 .container input {
     margin: 10px 10px;
-    width: calc(100% - 10px);
+    width: calc(100% - 20px);
     height: 30px;
     border: none;
     background-color: #ffffff;
@@ -148,9 +158,6 @@ button {
     transition: 0.3s linear;
 }
 
-button:hover {
-    opacity: 0.85;
-}
 
 .link {
     text-decoration: none;

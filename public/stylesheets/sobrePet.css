@@ -12,28 +12,28 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url('../img/fundoCadastro.jpg');
+    background: linear-gradient(13deg, #71b7e6, #9b59b6);
 }
 
 div#parallelogram {
     background: #ffffff;
-    width: 700PX;
-    height: 663px;
-    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    padding: 55px 5px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px;
-    color: #414141;
+    max-width: 70vw;;
     list-style: none;
 }
 
 div#parallelogram img {
-    padding-top: 2.3vw;
-    padding-left: 10vw;
+    padding: 3vw;
+    margin-left: auto;
 }
 
 div#parallelogram li {
-    cursor: pointer;
     list-style: none;
+    font-weight: 800;
 }
 
 div#parallelogram li:focus {
@@ -49,32 +49,22 @@ div#parallelogram li {
     padding-top: 40px;
 }
 
-section {
-    display: flex;
-    background: #6C63FFCC;
-    padding: 30px 5px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px;
-    max-width: 70vw;
+div#parallelogram a {
+    text-decoration: none;
+    cursor: pointer;
 }
+
+div#parallelogram a:focus {
+    color: #6C63FF;
+    font-weight: 800;
+}
+
+
 
 section h1 {
     padding: 40px 10px;
     text-align: center;
     color: #fff;
-}
-
-.foto label {
-    width: 180px;
-}
-
-.foto {
-    display: flex;
-}
-
-.foto img {
-    height: 24px;
-    margin-top: 12px;
 }
 
 fieldset {
@@ -83,9 +73,6 @@ fieldset {
     padding: 10px;
 }
 
-.end {
-    width: 40.7vw;
-}
 
 .container input::placeholder {
     font-size: 15px;
@@ -93,7 +80,7 @@ fieldset {
 
 .container input {
     margin: 10px 10px;
-    width: calc(100% - 10px);
+    width: calc(100% - 20px);
     height: 30px;
     border: none;
     background-color: #ffffff;
@@ -101,7 +88,20 @@ fieldset {
     color: #333;
     font-size: 18px;
     font-weight: 700;
-    padding: 14px 10px 0 10px;
+    padding: 4px 4px 6px 10px;
+}
+
+.container select {
+    margin: 10px 10px;
+    width: calc(100% - 20px);
+    height: 30px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 4px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 4px 4px 6px 10px;
 }
 
 .container {
@@ -115,7 +115,7 @@ fieldset {
     font-weight: 700;
     position: absolute;
     line-height: 27px;
-    bottom: 35px;
+    bottom: 37px;
     left: 20px;
     user-select: none;
     pointer-events: none;
@@ -154,6 +154,7 @@ button {
     height: 70px;
     background: #FEAD55;
     color: #fff;
+    font-weight: 800;
     font-size: 20px;
     border: none;
     border-radius: 20px;
@@ -161,25 +162,12 @@ button {
     transition: 0.3s linear;
 }
 
-button:hover {
-    opacity: 0.85;
-}
-
-.link {
-    text-decoration: none;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 500;
-    padding-top: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-}
-
-.link:hover {
+.button-voltar {
+    background: #D3D1FF;
     color: #111;
     font-weight: 800;
 }
+
 
 @media only screen  and ( max-width: 1080px) {
     div#parallelogram {
@@ -209,6 +197,11 @@ button:hover {
     }
 
     button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .button-voltar {
         width: 100%;
         margin-left: 0;
     }
