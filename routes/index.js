@@ -38,4 +38,18 @@ router.get('/confirmacao', confirmacaoCadastro.views)
 
 router.get('/telaFoto', telaFoto.views)
 
+
+
+/* Auntenticação */
+
+router.get("/auth/:method?", function (req, res, next) {
+    if (req.params.method  == "login" || req.params.method == "signin") {
+      res.render("auth", { method: "login" })
+    }else if(req.params.method == "signup" || req.params.method == "register") {
+      res.render("auth", { method: "signup" })
+    }
+})
+
+
+
 module.exports = router

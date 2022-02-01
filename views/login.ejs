@@ -1,35 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../=6stylesheets/styleLogin.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+	<title>Página Login</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/styleLogin.css">
 </head>
-<body>
-    <img src="../img/login-form.png" alt="">
-    <div id="login-contanier">
-        <h2>Iniciar Sessão em sua Conta <h2 class="estilizar-color">PetsClub</h2></h2>
-        <br>
-        <p>É novo por aqui? <a href="../cadastro/cadastro.html" class="modificar-registrar">Registre-se</a></p>  
-        <form action="">
-            <input type="email" name="email" id="email" placeholder="Digite o seu email">
-            <input type="password" name="password" id="password" placeholder="Digite a sua senha">
-            <input type="submit" value="Login">
-        </form>
-        <div id="lembrar">
-            <input type="checkbox" name="check" id="check">
-            <label for="checkbox" id="lem">Lembrar minha senha</label>
+<body>  
+        <video src="../img/Black dog playing in a garden.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <!-- LOGIN MODULE -->
+        <div class="login">
+            <div class="wrap">
+                <h1>Seja bem vindo a <span class="span-animals">I</span>ANIMALS</h1>
+                <h2>Efetue seu login abaixo!</h2>
+                <!-- LOGIN FORM -->
+                <div class="user">
+                    <div class="form-wrap">
+                        <!-- TABS -->
+                    	<div class="tabs">
+                            <h3 class="login-tab"><a class="log-in active" href="#login-tab-content"><span>Login<span></a></h3>
+                    	</div>
+                        <!-- TABS CONTENT -->
+                    	<div class="tabs-content">
+                            <!-- TABS CONTENT LOGIN -->
+                    		<div id="login-tab-content" class="active">
+                    			<form class="login-form" action="" method="post">
+                    				<input type="text" class="input" id="user_login" autocomplete="off" placeholder="Email ou Username">
+                    				<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Senha">
+                    				<input type="checkbox" class="checkbox" checked id="remember_me">
+                    				<label for="remember_me">Lembrar da senha</label>
+                    				<input type="submit" class="button" value="Login">
+                    			</form>
+                    			<div class="help-action">
+                    				<p><a class="forgot" href="#">Esqueci minha senha</a></p>
+                    			</div>
+                                <div class="help-action">
+                    				<p>É novo por aqui? <a class="forgot" href="#">Registre-se</a></p>
+                    			</div>
+                    		</div>
+                    	</div>
+                	</div>
+                </div>
+            </div>
         </div>
-        <div id="register-container">
-            <a href="../esqueciSenha/esqueciSenha.html">Esqueci minha senha</a>
-            <br>
-            <a href="../index.html">Voltar</a>
-        </div>
-    </div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/responsivo.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="parallelogram">
+        <ul>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Mostre nos o seu pet</a></li>
+            <li><a href="#">Sobre seu Pet</a></li>
+            <li><a href="#">Confirmação</a></li>
+        </ul>
+        <img src="../img/dog-register.png" alt="">
+    </div>
+
+
+    <section class=""> 
+        <form action="/products/criar" method="post">
+            <% if(typeof(errors) != "undefined"){ %>
+                <ul class="errors">
+                    <% errors.forEach((errors) => { %>
+                        <li><%= errors.msg %></li>
+                    <% }) %>
+                </ul>
+           <% } %>
+            <h1>Conte-nos um pouco sobre você</h1>
+            <fieldset class="primeira-div">
+                <div class="container"> 
+                   <input type="text" name="nome" required autofocus placeholder="Guilherme Nobrega">
+
+                   <label for="nome">Nome Completo</label>
+                </div>
+                <div class="container">
+                    <input type="text" name="user" required autofocus placeholder="User Name">
+
+                    <label>User Name</label>
+                </div>
+            </fieldset>
+            <fieldset class="segunda-div">
+                <div class="container">
+                    <input type="text" name="cel" required autofocus placeholder="(xx) xxxxx-xxxx">
+
+                    <label for="cel">Telefone</label>
+                </div>
+                <div class="container">
+                    <input type="email" name="email" required autofocus placeholder="name@email.com">
+
+                    <label for="email">Email</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <input type="password" name="senha" placeholder="Digite sua senha">
+
+                    <label for="numero">Senha</label>
+                </div>
+                <div class="container">
+                    <input type="password" name="confirmSenha" placeholder="Confirme sua senha">
+                    <label>Confirmação</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <input type="text" name="endereco" id="cep" placeholder="Ex: Rua/Estrada...">
+
+                    <label for="numero">CEP</label>
+                </div>
+                <div class="container">
+                    <input type="text" name="estado" id="estado" placeholder="Ex: Jd Paineira">
+                    
+                    <label>Estado</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <input type="text" name="endereco" id="endereco" placeholder="Ex: Rua/Estrada...">
+
+                    <label for="numero">Endereço</label>
+                </div>
+                <div class="container">
+                    <input type="text" name="bairro" id="bairro" placeholder="Ex: Jd Paineira">
+                    
+                    <label>Bairro</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="container">
+                    <input type="number" name="numero" id="numero" placeholder="Numero da Residencia">
+
+                    <label for="numero">Número</label>
+                </div>
+                <div class="container">
+                    <input type="text" name="cidade" id="cidade" placeholder="Cidade">
+
+                    <label>Cidade</label>
+                </div>
+            </fieldset>
+            <fieldset class="div-check">
+                <div id="check">
+                    <input type="checkbox" name="accept" required>
+                    <label>Aceitar os termos de uso</label>
+                </div>
+                <button type="submit">Avançar</button>
+            </fieldset>
+            <a href="#" class="link">Ler os termos de uso</a>
+        </form>
+    </section>
+    <script src="../javascripts/cadastroCep.js"></script>
+</body>
+</html>

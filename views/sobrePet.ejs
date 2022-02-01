@@ -23,7 +23,14 @@
 
     <section class=""> 
         <form action="" method="post">
-            <h1>Conte-nos um pouco sobre você</h1>
+            <% if(typeof(errors) != "undefined"){ %>
+                <ul class="errors">
+                    <% errors.forEach((errors) => { %>
+                        <li><%= errors.msg %></li>
+                    <% }) %>
+                </ul>
+           <% } %>
+            <h1>Conte-nos mais sobre o pet</h1>
             <fieldset class="primeira-div">
                 <div class="container"> 
                    <input type="text" name="nome" required autofocus placeholder="Ex: Leo Messi">
