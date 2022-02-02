@@ -6,25 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../stylesheets/responsivo.css">
+    <link rel="stylesheet" href="../stylesheets/errors.css">
     <title>Document</title>
 </head>
 <body>
 
-    <div id="parallelogram">
-        <ul>
-            <li><a href="#">Perfil</a></li>
-            <li><a href="#">Mostre nos o seu pet</a></li>
-            <li><a href="#">Sobre seu Pet</a></li>
-            <li><a href="#">Confirmação</a></li>
-        </ul>
-        <img src="../img/dog-register.png" alt="">
-    </div>
-
-
-    <section class=""> 
+    <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="#hero">
+                <h1><span>I</span>ANIMALS</h1>
+              </a>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger">
+                <div class="bar"></div>
+              </div>
+              <ul>
+                <li><a href="#hero" data-after="Home">Home</a></li>
+                <li><a href="#services" data-after="Depoimentos">Depoimentos</a></li>
+                <li><a href="#projects" data-after="Serviços">Serviços</a></li>
+                <li><a href="#about" data-after="Sobre">Sobre</a></li>
+                <li><a href="login" data-after="Login">Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="body-form"> 
         <form action="/products/criar" method="post">
             <% if(typeof(errors) != "undefined"){ %>
                 <ul class="errors">
+                    <h1 style="color: #FEAD55;">Seguintes erros!</h1>
                     <% errors.forEach((errors) => { %>
                         <li><%= errors.msg %></li>
                     <% }) %>

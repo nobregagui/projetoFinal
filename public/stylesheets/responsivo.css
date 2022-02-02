@@ -7,56 +7,12 @@
     font-family: 'Nunito';
 }
 
-body {
+.body-form {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-}
-
-div#parallelogram {
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    padding: 55px 5px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px;
-    max-width: 70vw;;
-    list-style: none;
-}
-
-div#parallelogram img {
-    padding: 3vw;
-    margin-left: auto;
-}
-
-div#parallelogram li {
-    list-style: none;
-    font-weight: 800;
-}
-
-div#parallelogram li:focus {
-    color: #6C63FF;
-}
-
-div#parallelogram ul{
-    text-align: center;
-    padding-top: 90px;
-}
-
-div#parallelogram li {
-    padding-top: 40px;
-}
-
-div#parallelogram a {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-div#parallelogram a:focus {
-    color: #6C63FF;
-    font-weight: 800;
 }
 
 
