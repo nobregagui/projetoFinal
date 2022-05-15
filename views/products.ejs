@@ -10,30 +10,27 @@
     <title>Document</title>
 </head>
 <body>
-
-    <section id="header">
+    <header>
         <div class="header container">
-          <div class="nav-bar">
-            <div class="brand">
-              <a href="#hero">
-                <h1><span>I</span>ANIMALS</h1>
-              </a>
-            </div>
-            <div class="nav-list">
-              <div class="hamburger">
-                <div class="bar"></div>
+            <div class="nav-bar">
+              <div class="brand">
+                <a href="#hero" style="text-decoration: none;">
+                  <h1><span>I</span>ANIMALS</h1>
+                </a>
               </div>
-              <ul>
-                <li><a href="#hero" data-after="Home">Home</a></li>
-                <li><a href="#services" data-after="Depoimentos">Depoimentos</a></li>
-                <li><a href="#projects" data-after="Serviços">Serviços</a></li>
-                <li><a href="#about" data-after="Sobre">Sobre</a></li>
-                <li><a href="login" data-after="Login">Login</a></li>
-              </ul>
+              <div class="nav-list">
+                <div class="hamburger">
+                  <div class="bar"></div>
+                </div>
+                <ul>
+                  <li><a href="#hero" data-after="Home">USUÁRIO</a></li>
+                  <li><a href="#services" data-after="Depoimentos">SECRETÁRIO</a></li>
+                  <li><a href="#projects" data-after="Serviços">MÉDICO</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+    </header>
     <section class="body-form"> 
         <form action="/products/criar" method="post">
             <% if(typeof(errors) != "undefined"){ %>
@@ -114,6 +111,68 @@
                     <input type="text" name="cidade" id="cidade" placeholder="Cidade">
 
                     <label>Cidade</label>
+                </div>
+            </fieldset>
+            <h1>Conte-nos um pouco sobre você</h1>
+            <fieldset class="primeira-div">
+                <div class="container"> 
+                   <input type="text" name="nome" required autofocus placeholder="Ex: Leo Messi">
+
+                   <label for="nome">Nome do Pet</label>
+                </div>
+                <div class="container">
+                    <input type="text" name="sobrenome" required autofocus placeholder="Ex: Chow-Chow">
+
+                    <label>Raça</label>
+                </div>
+            </fieldset>
+            <fieldset class="segunda-div">
+                <div class="container">
+                    <input type="text" name="especie" required autofocus placeholder="Ex: Cão, Gato">
+
+                    <label for="cel">Espécie</label>
+                </div>
+                <div class="container">
+                    <input type="date" max="2022-12-31" name="niver" style="width: calc(100% - -22px)" required autofocus placeholder="ola td bem">
+
+                    <label for="email">Aniversário do Pet</label>
+                </div>
+            </fieldset>
+            <fieldset style="margin-left: 30px;">
+                <div class="container">
+                    <select name="" id="">
+                        <option value="">Selecionar</option>
+                        <option value="">Macho</option>
+                        <option value="">Fêmea</option>
+                    </select>
+
+                    <label>Gênero</label>
+                </div>
+                <div class="container">
+                    <select name="" id="">
+                        <option value="">Selecionar</option>
+                        <option value="">Sim</option>
+                        <option value="">Não</option>
+                    </select>
+
+                    <label>Castrado (a)</label>
+                </div>
+                <div class="container">
+                    <select name="" id="">
+                        <option value="">Selecionar</option>
+                        <option value="">1-2kg</option>
+                        <option value="">2-4kg</option>
+                        <option value="">4-6kg</option>
+                        <option value="">Mais que 8kg</option>
+                    </select>
+
+                    <label>Peso</label>
+                </div>
+            </fieldset>
+            <h1>Arquive uma foto do seu pet!</h1>
+            <fieldset class="primeira-div">
+                <div class="container"> 
+                   <input type="file" name="nome" style="height: 50px; margin-left: 30px;" required autofocus placeholder="Ex: Leo Messi">
                 </div>
             </fieldset>
             <fieldset class="div-check">
